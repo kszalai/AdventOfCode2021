@@ -3,7 +3,7 @@ import java.io.File
 fun main() {
     val lineList = ArrayList<Int>()
 
-    File("src/main/kotlin/Day1/input.txt").useLines { lines ->
+    File("src/main/kotlin/day1/input.txt").useLines { lines ->
         lines.forEach { 
             lineList.add(it.toInt())
         }

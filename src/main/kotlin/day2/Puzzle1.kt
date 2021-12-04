@@ -4,7 +4,7 @@ import common.SubmarineDirection
 import common.readInputFile
 
 fun main() {
-    val input = readInputFile<String>("src/main/kotlin/Day2/input.txt")
+    val input = readInputFile<String>("src/main/kotlin/day2/input.txt")
 
     var horizontal = 0
     var vertical = 0
