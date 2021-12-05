@@ -69,7 +69,9 @@ class BingoBoard(private val board: ArrayList<ArrayList<Int>>) {
         }.any { row -> row }
         var hasVertical = false
         for (i in 0 until marked.size) {
-            hasVertical = (marked.map { row -> row[i] }.filter { cell -> cell }.size) == marked.size
+            if (!hasVertical) {
+                hasVertical = (marked.map { row -> row[i] }.filter { cell -> cell }.size) == marked.size
+            }
         }
 
         return hasHorizontal || hasVertical
