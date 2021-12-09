@@ -9,7 +9,7 @@ fun main() {
 
     val days = 80
 
-    for(i in 0 until days) {
+    for (i in 0 until days) {
         val newFish = ArrayList<Lanternfish?>()
         fish.forEach {
             newFish.add(it.countDay())
