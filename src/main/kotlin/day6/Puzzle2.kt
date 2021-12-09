@@ -27,10 +27,5 @@ fun main() {
         fish[fish.size - 1] = newFish
     }
 
-    var total = 0.0
-    fish.forEach {
-        total += it
-    }
-
-    println(total.toBigDecimal())
+    println(fish.sum().toBigDecimal())
 }

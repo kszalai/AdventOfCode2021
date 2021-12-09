@@ -16,7 +16,7 @@ fun main() {
 
     for (i in min..max) {
         val totalFuel = input.sumOf { position ->
-            abs(position - i)
+            triangularNumber(abs(position - i))
         }
         if (smallestFuel == -1 || totalFuel < smallestFuel) {
             smallestFuel = totalFuel
@@ -24,4 +24,8 @@ fun main() {
     }
 
     println(smallestFuel)
+}
+
+fun triangularNumber(target: Int): Int {
+    return (target * (target + 1)) / 2
 }
