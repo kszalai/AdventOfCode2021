@@ -21,7 +21,7 @@ fun main() {
     for (i in 0 until days) {
         val newFish = fish[0]
         for (j in 1 until fish.size) {
-            fish[j -1] = fish[j]
+            fish[j - 1] = fish[j]
         }
         fish[fish.size - 3] += newFish
         fish[fish.size - 1] = newFish
