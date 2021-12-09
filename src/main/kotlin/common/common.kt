@@ -13,3 +13,7 @@ fun <T> readInputFile(path: String): ArrayList<T> {
 
     return lineList
 }
+
+fun readIntCSVInputFile(path: String): ArrayList<Int> {
+    return File(path).bufferedReader().use { reader -> reader.readLine() }.split(",").map { number -> number.toInt() } as ArrayList<Int>
+}

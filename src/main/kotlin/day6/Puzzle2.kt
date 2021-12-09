@@ -1,10 +1,10 @@
 package day6
 
-import common.readInputFile
+import common.readIntCSVInputFile
 
 fun main() {
-    val input = readInputFile<String>("src/main/kotlin/day6/input.txt")[0].split(",").map { start -> start.toInt() } as ArrayList<Int>
-    var fish = arrayListOf(
+    val input = readIntCSVInputFile("src/main/kotlin/day6/input.txt")
+    val fish = arrayListOf(
         input.filter { fish -> fish == 0 }.size.toDouble(),
         input.filter { fish -> fish == 1 }.size.toDouble(),
         input.filter { fish -> fish == 2 }.size.toDouble(),

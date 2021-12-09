@@ -1,11 +1,9 @@
 package day6
 
-import common.readInputFile
+import common.readIntCSVInputFile
 
 fun main() {
-    val input = readInputFile<String>("src/main/kotlin/day6/input.txt")
-
-    val fish = input[0].split(",").map { start -> Lanternfish(start.toInt()) } as ArrayList<Lanternfish>
+    val fish = readIntCSVInputFile("src/main/kotlin/day6/input.txt").map { start -> Lanternfish(start) } as ArrayList<Lanternfish>
 
     val days = 80
 
