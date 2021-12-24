@@ -16,10 +16,6 @@ fun main() {
         steps++
     }
 
-    input.forEach {
-        println(it)
-    }
-
     println(steps)
 }
 
